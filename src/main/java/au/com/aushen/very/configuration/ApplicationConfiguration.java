@@ -6,7 +6,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
 @Import({
-        ServletContainerConfiguration.class
+        ServletContainerConfiguration.class,
+        SwaggerConfiguration.class
 })
 public class ApplicationConfiguration extends WebMvcConfigurerAdapter {
 
