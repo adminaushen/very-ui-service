@@ -11,7 +11,7 @@ public class IndexController {
     @GetMapping(value = "", produces = "application/json")
     public String index() {
         DateTime now = DateTime.now();
-        return String.format("Hello, Very. It's %s.", now.toString(ISODateTimeFormat.dateTime()));
+        return String.format("{\"sample\":\"Hello, Very. It's %s.\"}", now.toString(ISODateTimeFormat.dateTime()));
     }
 
 }
